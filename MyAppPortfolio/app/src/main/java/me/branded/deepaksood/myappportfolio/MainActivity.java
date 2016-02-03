@@ -7,6 +7,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    Toast toast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,26 +16,50 @@ public class MainActivity extends AppCompatActivity {
     }
     
     public void spotifyStreamer(View view) {
-        Toast.makeText(MainActivity.this, "This button will launch my SpotifyStreamer App", Toast.LENGTH_SHORT).show();
+        if(toast != null) {
+            toast.cancel();
+        }
+        toast = Toast.makeText(MainActivity.this, "This button will launch my SpotifyStreamer App", Toast.LENGTH_SHORT);
+        toast.show();
     }
     
     public void scoresApp(View view) {
-        Toast.makeText(MainActivity.this, "This button will launch my Scores App", Toast.LENGTH_SHORT).show();
+        if(toast != null) {
+            toast.cancel();
+        }
+        toast = Toast.makeText(MainActivity.this, "This button will launch my Scores App", Toast.LENGTH_SHORT);
+        toast.show();
     }
     
     public void libraryApp(View view) {
-        Toast.makeText(MainActivity.this, "This button will launch my Library App", Toast.LENGTH_SHORT).show();
+        if(toast != null) {
+            toast.cancel();
+        }
+        toast = Toast.makeText(MainActivity.this, "This button will launch my Library App", Toast.LENGTH_SHORT);
+        toast.show();
     }
     
     public void buildItBigger(View view) {
-        Toast.makeText(MainActivity.this, "This button will launch my BuildItBigger App", Toast.LENGTH_SHORT).show();
+        if(toast != null) {
+            toast.cancel();
+        }
+        toast = Toast.makeText(MainActivity.this, "This button will launch my BuildItBigger App", Toast.LENGTH_SHORT);
+        toast.show();
     }
     
     public void xyzReader(View view) {
-        Toast.makeText(MainActivity.this, "This button will launch my xyzReader App", Toast.LENGTH_SHORT).show();
+        if(toast != null) {
+            toast.cancel();
+        }
+        toast = Toast.makeText(MainActivity.this, "This button will launch my xyzReader App", Toast.LENGTH_SHORT);
+        toast.show();
     }
     
     public void capstone(View view) {
-        Toast.makeText(MainActivity.this, "This button will launch my Capstone App", Toast.LENGTH_SHORT).show();
+        if(toast != null) {
+            toast.cancel();
+        }
+        toast = Toast.makeText(MainActivity.this, "This button will launch my Capstone App", Toast.LENGTH_SHORT);
+        toast.show();
     }
 }
